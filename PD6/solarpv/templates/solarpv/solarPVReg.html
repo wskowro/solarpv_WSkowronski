@@ -1,0 +1,182 @@
+{% load static %}
+<!doctype html>
+
+<head>
+	<!-- William Skowronski -->
+		
+	<meta charset = "UTF-8">
+
+	<title>SolarPV Registration</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'solarpv/solarPVStyles.css' %}" />
+</head>
+
+<body>
+		<header>
+			<div class="left">
+				<div class="imgWrapper">
+					<svg width="200" height="200">       
+						<image href="{% static 'solarpv/solarPVLOGO.png' %}" height="200" width="200"/>
+					</svg>
+				</div>
+			</div>
+			
+			<div class="right menu">
+				<ul>
+					<li><a href="{% url 'solarPV' %}">Login</a></li>
+					<li><a href="{% url 'solarPVReg' %}">Register</a></li>
+					<li><a href="{% url 'solarPVWebform' %}">Webform</a></li>
+
+				</ul>
+			</div>
+		
+		</header>
+	  
+		<div class="menu">
+			<ul>
+				<li><a href="solarPV.html">Racks & Trackers</a></li>
+				<li><a href="solarPV.html">PV Module</a></li>
+				<li><a href="solarPV.html">PV Module</a></li>
+				<li><a href="solarPV.html">Data Analytics</a></li>
+				<li><a href="solarPV.html">Cybersecurity</a></li>
+			</ul>
+		</div>
+	  
+		<div id="main">
+		
+			<article>
+			
+				<h1>Register</h1>
+				
+				<div id="regForm">
+					<p>Username (required, must be at most 8 characters long):</p>
+					<input name="username" id="user" type="text">
+					<p id="usernameCheck" color="red"> </p>
+			
+					
+					<p>Password: (required, must be at most 8 characters long comprising at least a digit, a lowercase letter, and an uppercase letter)</p>
+					<input name="password" id="pass" type="text">
+					<p id="passwordCheck"> </p>
+					
+				
+					<p>First Name:</p>
+					<input name="fname" type="text">
+			
+					<br>
+					
+					<p>Middle Name (not required):</p>
+					<input name="mname" type="text">
+			
+					<br>
+			
+					<p>Last Name:</p>
+					<input name="lname" type="text">
+			
+					<br>
+			
+					<p>Street Address:</p>
+					<input name="address" type="text">
+			
+					<br>
+			
+					<p>City:<p>
+					<input name="city" type="text">
+			
+					<br>
+			
+					<p>State (US states only):</p>
+					<input name="state" type="text">
+			
+					<br>
+			
+					<p>ZIP/Postal Code:</p>
+					<input name="zip" type="text">
+			
+					<br>
+					
+					<p>Email:</p>
+					<input name="email" type="text">
+			
+					<br>
+					
+					<p>Cell Phone Number:</p>
+					<input name="cellPhone" type="text">
+			
+					<br>
+					
+					<p>Company:<p>
+					<input name="company" type="text">
+					
+					<br>
+					<br>
+					
+					<button type="submit" onclick="alert('Does Nothing Yet!')">Submit Registration</button>
+			
+				</div>
+			
+			</article>
+		
+			<nav>
+				<h2><a href="solarPV.html">PV Module</a></h2>
+				<ul>
+					<li><a href="solarPV.html">Testing & Certification</a></li>
+					<li><a href="solarPV.html">PV Rating</a></li>
+				</ul>
+				
+				<h2><a href="solarPV.html">PV System Performance</a></h2>
+				<ul>
+					<li><a href="solarPV.html">Monitoring & Inspection</a></li>
+					<li><a href="solarPV.html">Performance Analysis</a></li>
+					<li><a href="solarPV.html">Compare System</a></li>
+					<li><a href="solarPV.html">Certification</a></li>
+				</ul>
+				
+				<h2><a href="solarPV.html">Data Analytics</a></h2>
+				<ul>
+					<li><a href="solarPV.html">Module Lifetime Prediction</a></li>
+					<li><a href="solarPV.html">Energy Prediction</a></li>
+				</ul>
+				
+				<h2><a href="solarPV.html">Cybersecurity and Smart Grid Technologies</a></h2>
+				
+				<h2><a href="solarPV.html">SolarPV University</a></h2>
+			
+			</nav>
+		
+			<aside id="news">
+			
+				<h2>News and Events</h2>
+					<p><a href="solarPV.html">PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</a></p>
+					<p><a href="solarPV.html">Trump is next US president</a></p>
+					<p><a href="solarPV.html">Trump is next US president</a></p>
+					<p><a href="solarPV.html">Senate votes on SCOTUS nominee</a></p>
+			
+			</aside>
+		
+		</div>
+	  
+		<footer>
+		
+			<div class="left">
+			
+				<h3>SolarPV</h3>
+			
+				<p>Address, Phone, Email, Website</p>
+				<p>@ 2019 All Rights Reserved</p>
+				
+			</div>
+			
+			<div class="right">
+				<h4>Social Media</h4>
+				<ul>
+					<li><a href="solarPV.html">Facebook</a></li>
+					<li><a href="solarPV.html">Twitter</a></li>
+					<li><a href="solarPV.html">Instagram</a></li>
+				</ul>
+				
+			</div>
+		
+		</footer>
+		
+		<script src="{% static 'solarpv/solarPVScript.js' %}"></script>
+</body>
