@@ -1,0 +1,113 @@
+* {
+   box-sizing: border-box; 
+  }
+body 
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1920px;
+}
+
+#main 
+{
+	display: flex;
+	min-height: calc(108vh - 40vh);
+}
+
+#main > article 
+{
+	flex: 1;
+}
+
+#main > nav, 
+#main > aside 
+{
+	flex: 0 0 10vw;
+	background: beige;
+}
+
+#main > nav 
+{
+	order: -1;
+}
+
+header, footer, article, nav, aside 
+{
+	padding: 1em;
+}
+
+header 
+{
+	background: #e6e600;
+	height: 20vh;
+}
+
+footer
+{
+	background: #e6e600;
+	height: 10vh;
+}
+
+.menu
+{
+	text-align: center;
+	background-color: #ffcc00;
+}
+.menu ul
+{
+	list-style: none;
+		margin: 0px;
+	padding: 0
+}
+.menu li
+{
+	display: inline-block;
+	padding: 4px 20px;
+}
+.menu a
+{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.menu a:hover
+{
+	text-decoration: underline;
+}
+
+h3, h4
+{
+	margin: 0;
+}
+
+.right
+{
+	float: right;
+}
+
+.left
+{
+	float: left;
+}
+
+#news
+{
+	padding: 15px;
+	text-align: center;
+}
+
+#news p
+{
+	padding: 15px;
+}
+
+#regForm
+{
+	padding: 0px;
+}
+
+
+#passwordCheck, #usernameCheck
+{
+	color: red;
+}
+
