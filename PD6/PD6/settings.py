@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'solarpv',
+    'backend',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'PD6.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'iorztkqa',
+        'HOST': 'drona.db.elephantsql.com',
+        'USER': 'iorztkqa',
+        'PASSWORD': 'W1-9Uudmpbkfthef_ox6c2A31ubG9NOF',
+        'PORT': '5432'  
     }
 }
 
