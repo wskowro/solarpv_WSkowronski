@@ -1,9 +1,15 @@
-from django.urls import path
-
+from django.urls import path, include
+from rest_framework import routers
 from . import views
 
+router = routers.DefaultRouter()
+router.register('product', views.ProductView)
+router.register('certificate', views.CertificateView)
+router.register('service', views.ServiceView)
+
 urlpatterns = [
-    path('', views.solarPV, name='solarPV'),
-    path('solarPVReg/',views.solarPVReg,name='solarPVReg'),
-    path('solarPVWebform/',views.solarPVWebform,name='solarPVWebform'),
+    path('', views.index, name='solarPV'),
+    path('solarPVReg/',views.reg,name='solarPVReg'),
+    path('solarPVWebform/',views.webform,name='solarPVWebform'),
+    path('api/', include(router.urls))
 ]
